@@ -8,7 +8,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Live Site URL: [https://nath3010.github.io/single-price-grid-component-master/](https://nath3010.github.io/product-preview-card-component-main/)
+- Live Site URL: [https://nath3010.github.io/product-preview-card-component-main/](https://nath3010.github.io/product-preview-card-component-main/)
 
 ## Built with
 
