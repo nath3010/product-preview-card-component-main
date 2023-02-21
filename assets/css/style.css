@@ -1,0 +1,136 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-card {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1px;
+  width: 36%;
+}
+
+.product-card__img__block {
+  width: 60%;
+}
+.product-card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-card__content {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+  max-width: 50%;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 30px;
+}
+
+.product-card__type {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 8px;
+}
+.product-card__title {
+  font-family: "Fraunces", serif;
+  font-size: 3em;
+}
+
+.product-card__description {
+  color: hsl(228, 12%, 48%);
+  justify-content: center;
+  line-height: 1.7em;
+  font-size: 1em;
+}
+
+.product-card__price {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.product-card__price__new {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+}
+
+.product-card__price__old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.product-card__btn {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: hsl(204, 43%, 93%);
+  width: 17em;
+  height: 3em;
+  margin-top: 1em;
+}
+.product-card__btn:hover {
+  background-color: hsl(157, 45%, 30%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  body {
+    height: auto;
+  }
+
+  .product-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.3rem;
+  }
+
+  .product-card__img__block {
+    width: 100%;
+    max-width: 100%;
+  }
+  .product-card__img {
+    content: url("/assets/images/image-product-mobile.jpg");
+  }
+
+  .product-card__content {
+    width: 100%;
+    max-width: 100%;
+    gap: 15px;
+    padding: 5%;
+    padding-left: 27px;
+  }
+
+  .product-card__type {
+    font-size: 0.9em;
+  }
+  .product-card__title {
+    font-size: 2.4em;
+    max-width: 90%;
+  }
+
+  .product-card__description {
+    max-width: 90%;
+  }
+
+  .product-card__btn {
+    width: 19em;
+  }
+}
